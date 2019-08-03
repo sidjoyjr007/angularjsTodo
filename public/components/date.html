@@ -1,0 +1,5 @@
+
+<div ng-controller="datecontroller">
+  <button class="btn btn-primary dateBtn" ng-click="showCalendar()">{{date.toISOString().split('T')[0]}}</button>
+    <md-calendar   class="calendar" ng-model="date"   ng-change="hello()"></md-calendar>
+</div>
